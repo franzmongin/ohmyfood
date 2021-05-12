@@ -2,11 +2,19 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex {
+  display: flex;
+  &-center {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .container {
-  display: flex;
   flex-direction: column;
   .header {
+    z-index: 1;
     height: 60px;
     box-shadow: 0px 0px 5px grey;
     display: flex;
@@ -16,6 +24,19 @@ body {
       width: 165px;
       position: relative;
       top: 6px;
+    }
+  }
+  .localisation {
+    background: #eaeaea;
+    height: 50px;
+    &__logo {
+      position: relative;
+      left: -20px;
+    }
+    &__text {
+      font-weight: bold;
+      position: relative;
+      top: 2px;
     }
   }
 }

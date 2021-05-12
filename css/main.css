@@ -2,13 +2,22 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  display: flex;
   flex-direction: column;
 }
 .container .header {
+  z-index: 1;
   height: 60px;
   box-shadow: 0px 0px 5px grey;
   display: flex;
@@ -19,6 +28,19 @@ body {
   width: 165px;
   position: relative;
   top: 6px;
+}
+.container .localisation {
+  background: #eaeaea;
+  height: 50px;
+}
+.container .localisation__logo {
+  position: relative;
+  left: -20px;
+}
+.container .localisation__text {
+  font-weight: bold;
+  position: relative;
+  top: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */
