@@ -1,3 +1,4 @@
+$primary-color: #9356dc;
 body {
   margin: 0;
   padding: 0;
@@ -71,7 +72,51 @@ body {
       color: white;
       font-weight: bold;
       font-size: 0.95em;
-      box-shadow: 0px 0px 5px grey;
+      box-shadow: 0px 2px 6px grey;
+    }
+  }
+
+  .working {
+    padding-left: 20px;
+    padding-right: 20px;
+    &__step {
+      height: 75px;
+      background: #f6f6f6;
+      margin-bottom: 25px;
+      margin-left: 12.25px;
+      border-radius: 25px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      &--active {
+        background: #f5edff;
+      }
+      &__icon {
+        color: #7e7e7e;
+        font-size: 22px;
+        &--active {
+          color: $primary-color;
+        }
+      }
+      @for $i from 1 through 3 {
+        &__#{$i} {
+          &::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: "#{$i}";
+            background: $primary-color;
+            color: white;
+            height: 20px;
+            width: 25px;
+            border-radius: 25px;
+            padding-top: 5px;
+            font-weight: normal;
+            position: relative;
+            right: 12.25px;
+          }
+        }
+      }
     }
   }
 }
