@@ -135,6 +135,10 @@ body {
   }
 
   .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: $secondary-color;
     padding: $section-padding;
     padding-bottom: 41px;
