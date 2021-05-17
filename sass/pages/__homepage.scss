@@ -1,0 +1,193 @@
+.container {
+  flex-direction: column;
+  .localisation {
+    background: $tertiary-color;
+    height: 50px;
+    &__logo {
+      position: relative;
+      left: -20px;
+    }
+    &__text {
+      font-weight: bold;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  .explore {
+    position: relative;
+    align-items: center;
+    height: 285px;
+    background: #f6f6f6;
+    flex-direction: column;
+    padding-right: 35px;
+    padding-left: 35px;
+    h1,
+    h2 {
+      text-align: center;
+    }
+    h1 {
+      margin-top: 45px;
+      margin-bottom: 22px;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 1em;
+      margin-top: 0;
+      margin-bottom: 31px;
+    }
+    &__button {
+      width: 220px;
+      height: 50px;
+    }
+  }
+
+  .working {
+    flex-direction: column;
+    height: 440px;
+    padding: $section-padding;
+    h2 {
+      margin-top: 50px;
+    }
+    &__step {
+      position: relative;
+      margin-left: 12.5px;
+      height: 75px;
+      background: #f6f6f6;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      font-weight: bold;
+      align-items: center;
+      box-shadow: $classic-box-shadow;
+      &--active {
+        background: #f5edff;
+      }
+      &__icon {
+        color: #7e7e7e;
+        font-size: 22px;
+        padding-left: calc(8% + 12.5px);
+        &--active {
+          color: $primary-color;
+        }
+      }
+      &__text {
+        padding-left: 8%;
+      }
+      @for $i from 1 through 3 {
+        &__#{$i} {
+          &::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: "#{$i}";
+            background: $primary-color;
+            color: white;
+            height: 20px;
+            width: 25px;
+            border-radius: 25px;
+            padding-top: 5px;
+            font-weight: normal;
+            position: absolute;
+            left: -12.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $secondary-color;
+    padding: $section-padding;
+    padding-bottom: 41px;
+    h2 {
+      align-self: flex-start;
+      margin-top: 50px;
+    }
+    &__element {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 15px;
+      width: 335px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: $classic-box-shadow;
+      &--new::before {
+        content: "Nouveau";
+        position: absolute;
+        background: #99e2d0;
+        color: #008766;
+        font-weight: bold;
+        border-radius: 2px;
+        width: 80px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        top: 13px;
+        right: 13px;
+      }
+      &__image {
+        height: 174px;
+        width: 335px;
+        img {
+          object-fit: cover;
+          object-position: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &__footer {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 14px;
+        padding-right: 23px;
+        &__legend {
+          display: flex;
+          flex-direction: column;
+          &__name {
+            margin-bottom: 7px;
+            margin-top: 0;
+          }
+          &__localisation {
+          }
+        }
+        &__icon {
+          height: 20px;
+          &:hover {
+            .liked-icon {
+              opacity: 1;
+            }
+            .unliked-icon {
+              opacity: 0;
+            }
+          }
+          i {
+            font-size: 20px;
+            &.liked-icon {
+              opacity: 0;
+              background: linear-gradient($primary-color, $quartenary-color);
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              transition: opacity 300ms ease-in-out;
+            }
+            &.unliked-icon {
+              position: absolute;
+              transition: opacity 300ms ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

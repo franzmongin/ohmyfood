@@ -1,0 +1,13 @@
+.header {
+  z-index: 1;
+  height: 60px;
+  box-shadow: $header-box-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__logo {
+    width: 165px;
+    position: relative;
+    top: 3px;
+  }
+}

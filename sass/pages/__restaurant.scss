@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  .header--restaurant {
+    position: relative;
+    &__arrow {
+      display: inline-block;
+      position: absolute;
+      left: 23px;
+      font-size: 20px;
+    }
+  }
+  .restaurant--image {
+    height: 250px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .menu {
+    height: 375px;
+    position: relative;
+    z-index: 2;
+    bottom: 36px;
+    // margin-bottom: -36px;
+    border-radius: 24px 24px 0 0;
+    flex-direction: column;
+    padding: $section-padding;
+    background: $tertiary-color;
+    overflow: hidden;
+    &__heading {
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        position: absolute;
+        right: 16px;
+      }
+    }
+  }
+}

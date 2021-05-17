@@ -1,0 +1,11 @@
+.btn {
+  border-radius: 25px;
+  border: none;
+  &--gradient {
+    background: linear-gradient($quartenary-color, $primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 0.95em;
+    box-shadow: 0px 2px 6px grey;
+  }
+}
