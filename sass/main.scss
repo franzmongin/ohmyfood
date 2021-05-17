@@ -97,6 +97,7 @@ body {
       border-radius: 25px;
       font-weight: bold;
       align-items: center;
+      box-shadow: $classic-box-shadow;
       &--active {
         background: #f5edff;
       }
@@ -136,7 +137,7 @@ body {
   .restaurants {
     background: $secondary-color;
     padding: $section-padding;
-    padding-bottom: 64px;
+    padding-bottom: 41px;
     &__element {
       display: flex;
       flex-direction: column;
@@ -187,12 +188,32 @@ body {
     flex-direction: column;
     padding: $section-padding;
     background: #353535;
+    color: white;
     &__logo {
-      width: 97px;
+      width: 100px;
       margin-top: 25px;
-      fill: white;
+      margin-bottom: 25px;
       path {
         fill: white;
+      }
+    }
+    &__link {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 8px;
+      i {
+        width: 30px;
+        // margin-right: 12px;
+        // font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        &.fa-hands-helping {
+          // transform: scalex(0.65);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
       }
     }
   }

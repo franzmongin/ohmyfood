@@ -93,6 +93,7 @@ body {
   border-radius: 25px;
   font-weight: bold;
   align-items: center;
+  box-shadow: 0px 1px 5px lightgrey;
 }
 .container .working__step--active {
   background: #f5edff;
@@ -156,7 +157,7 @@ body {
 .container .restaurants {
   background: #f6f6f6;
   padding: 0 20px 0 20px;
-  padding-bottom: 64px;
+  padding-bottom: 41px;
 }
 .container .restaurants__element {
   display: flex;
@@ -203,14 +204,29 @@ body {
   flex-direction: column;
   padding: 0 20px 0 20px;
   background: #353535;
+  color: white;
 }
 .container .footer__logo {
-  width: 97px;
+  width: 100px;
   margin-top: 25px;
-  fill: white;
+  margin-bottom: 25px;
 }
 .container .footer__logo path {
   fill: white;
+}
+.container .footer__link {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+.container .footer__link i {
+  width: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+.container .footer__link a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
