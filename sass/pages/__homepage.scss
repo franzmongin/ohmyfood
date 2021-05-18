@@ -1,7 +1,7 @@
 .container {
   flex-direction: column;
   .localisation {
-    background: $tertiary-color;
+    background: $fifth-color;
     height: 50px;
     &__logo {
       position: relative;
@@ -100,7 +100,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: $secondary-color;
+    background: $fourth-color;
     padding: $section-padding;
     padding-bottom: 41px;
     h2 {
@@ -174,7 +174,7 @@
             font-size: 20px;
             &.liked-icon {
               opacity: 0;
-              background: linear-gradient($primary-color, $quartenary-color);
+              background: linear-gradient($primary-color, $second-color);
               -webkit-text-fill-color: transparent;
               background-clip: text;
               -webkit-background-clip: text;

@@ -1,6 +1,6 @@
 .container {
-  position: relative;
-  .header--restaurant {
+  background: $fifth-color;
+  .header-restaurant {
     position: relative;
     &__arrow {
       display: inline-block;
@@ -9,7 +9,7 @@
       font-size: 20px;
     }
   }
-  .restaurant--image {
+  .restaurant-image {
     height: 250px;
     img {
       height: 100%;
@@ -18,24 +18,90 @@
     }
   }
   .menu {
-    height: 375px;
-    position: relative;
     z-index: 2;
-    bottom: 36px;
-    // margin-bottom: -36px;
     border-radius: 24px 24px 0 0;
     flex-direction: column;
     padding: $section-padding;
-    background: $tertiary-color;
+    background: $fifth-color;
     overflow: hidden;
     &__heading {
+      display: flex;
       position: relative;
+      width: 100%;
       align-items: center;
       justify-content: space-between;
+      margin-left: 5px;
+      h1 {
+        font-family: "Shrikhand", cursive;
+        font-weight: normal;
+        font-size: 27px;
+      }
       i {
         position: absolute;
-        right: 16px;
+        right: 21px;
       }
     }
+    .menu__section {
+      flex-direction: column;
+      margin-bottom: 8px;
+      &__heading {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 300;
+        height: 20px;
+        width: 100px;
+        margin-left: 5px;
+        &__border {
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          width: 35px;
+          background: $tertiary-color;
+        }
+      }
+      &__element {
+        box-sizing: border-box;
+        height: 60px;
+        background: white;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 15px 10px 15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        box-shadow: $classic-box-shadow;
+        &__name {
+          flex-direction: column;
+          h3,
+          h4 {
+            margin: 0;
+            max-width: 242px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          h3 {
+            font-size: 17.8px;
+            margin-bottom: 4px;
+          }
+          h4 {
+            font-weight: 300;
+            font-size: 14px;
+          }
+        }
+        &__price {
+          font-size: 13px;
+          font-weight: bold;
+          //   min-width: 40px;
+        }
+      }
+    }
+  }
+  .order-button {
+    width: 185px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 20px;
   }
 }
