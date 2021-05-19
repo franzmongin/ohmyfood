@@ -64,38 +64,76 @@
         box-sizing: border-box;
         height: 60px;
         background: white;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 0 15px 10px 15px;
         margin-bottom: 15px;
+        padding-left: 10px;
         border-radius: 15px;
         box-shadow: $classic-box-shadow;
-        &__name {
-          flex-direction: column;
+        overflow: hidden;
+        &__content {
+          justify-content: space-between;
+          width: 100%;
           min-width: 0;
-          h4 {
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+          &__name {
+            box-sizing: border-box;
+            height: 60px;
+            flex-direction: column;
+            min-width: 0;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            h4 {
+              margin: 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            h3 {
+              font-size: 16.8px;
+              margin-bottom: 4px;
+              margin-top: 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            h4 {
+              font-weight: 300;
+              font-size: 14px;
+            }
           }
-          h3 {
-            font-size: 17.8px;
-            margin-bottom: 4px;
-            overflow: hidden;
-            text-overflow: ellipsis;
+          &__price {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-bottom: 10px;
             white-space: nowrap;
-          }
-          h4 {
-            font-weight: 300;
-            font-size: 14px;
+            font-size: 13px;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
           }
         }
-        &__price {
-          margin-left: 20px;
-          font-size: 13px;
-          font-weight: bold;
-          white-space: nowrap;
+        &__button {
+          background: $tertiary-color;
+          width: 0;
+          min-width: 0;
+          transition: all 300ms;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          i {
+            transition: transform 300ms;
+            color: white;
+          }
+        }
+
+        &:hover {
+          .menu__section__element__button {
+            width: 50px;
+            min-width: 50px;
+            i {
+              transform: rotate(-360deg);
+            }
+          }
         }
       }
     }
