@@ -371,11 +371,10 @@ a {
 }
 .container .menu .menu__section__element__name {
   flex-direction: column;
+  min-width: 0;
 }
-.container .menu .menu__section__element__name h3,
 .container .menu .menu__section__element__name h4 {
   margin: 0;
-  max-width: 242px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -383,14 +382,19 @@ a {
 .container .menu .menu__section__element__name h3 {
   font-size: 17.8px;
   margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .container .menu .menu__section__element__name h4 {
   font-weight: 300;
   font-size: 14px;
 }
 .container .menu .menu__section__element__price {
+  margin-left: 20px;
   font-size: 13px;
   font-weight: bold;
+  white-space: nowrap;
 }
 .container .order-button {
   width: 185px;

@@ -72,10 +72,9 @@
         box-shadow: $classic-box-shadow;
         &__name {
           flex-direction: column;
-          h3,
+          min-width: 0;
           h4 {
             margin: 0;
-            max-width: 242px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -83,6 +82,9 @@
           h3 {
             font-size: 17.8px;
             margin-bottom: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
           h4 {
             font-weight: 300;
@@ -90,9 +92,10 @@
           }
         }
         &__price {
+          margin-left: 20px;
           font-size: 13px;
           font-weight: bold;
-          //   min-width: 40px;
+          white-space: nowrap;
         }
       }
     }
