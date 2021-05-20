@@ -9,12 +9,3 @@ $section-padding: 0 15px 0 15px;
 
 $fourth-color: #f6f6f6;
 $fifth-color: #eaeaea;
-
-@keyframes buttonrotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
