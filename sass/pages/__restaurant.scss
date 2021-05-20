@@ -37,8 +37,7 @@
         font-size: 27px;
       }
       i {
-        position: absolute;
-        right: 21px;
+        margin-right: 20px;
       }
     }
     .menu__section {
@@ -52,6 +51,8 @@
         height: 20px;
         width: 100px;
         margin-left: 5px;
+        margin-bottom: 12px;
+        margin-top: 12px;
         &__border {
           position: absolute;
           bottom: 0;
