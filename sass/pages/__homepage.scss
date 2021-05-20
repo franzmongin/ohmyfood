@@ -113,7 +113,8 @@
       flex-direction: column;
       background: white;
       border-radius: 15px;
-      width: 335px;
+      // width: 335px;
+      width: 100%;
       overflow: hidden;
       margin-bottom: 20px;
       box-shadow: $classic-box-shadow;
@@ -135,7 +136,8 @@
       }
       &__image {
         height: 174px;
-        width: 335px;
+        // width: 335px;
+        width: 100%;
         img {
           object-fit: cover;
           object-position: center;

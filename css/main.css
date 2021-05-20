@@ -1,3 +1,11 @@
+@keyframes buttonrotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url(../../fonts/Shrikhand/Shrikhand-Regular.ttf);
@@ -220,7 +228,7 @@ a {
   flex-direction: column;
   background: white;
   border-radius: 15px;
-  width: 335px;
+  width: 100%;
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: 0px 1px 5px lightgrey;
@@ -243,7 +251,7 @@ a {
 }
 .container .restaurants__element__image {
   height: 174px;
-  width: 335px;
+  width: 100%;
 }
 .container .restaurants__element__image img {
   object-fit: cover;
@@ -421,7 +429,6 @@ a {
   overflow: hidden;
 }
 .container .menu .menu__section__element__button i {
-  transition: transform 300ms;
   color: white;
 }
 .container .menu .menu__section__element:hover .menu__section__element__button {
@@ -429,7 +436,7 @@ a {
   min-width: 50px;
 }
 .container .menu .menu__section__element:hover .menu__section__element__button i {
-  transform: rotate(-360deg);
+  animation: buttonrotate 300ms;
 }
 .container .order-button {
   width: 185px;
