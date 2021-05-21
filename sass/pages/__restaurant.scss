@@ -24,6 +24,8 @@
     padding: $section-padding;
     background: $fifth-color;
     overflow: hidden;
+    position:relative;
+    bottom:20px;
     &__heading {
       display: flex;
       position: relative;
