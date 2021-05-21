@@ -5,10 +5,29 @@ body {
   font-family: Roboto;
 }
 .container {
-  max-width: 1500px;
+  max-width: 2500px;
   margin: auto;
+}
+.container--home {
+  animation: loader-background 3000ms;
 }
 a {
   text-decoration: none;
   color: black;
+}
+.loader {
+  box-sizing: border-box;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background: white;
+  top: 50vh;
+  margin: auto;
+  animation: loader 1000ms;
+  animation-iteration-count: 3;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  border-radius: 25px;
+  border-top: 3px solid $primary-color;
+  border-bottom: 3px solid $second-color;
 }

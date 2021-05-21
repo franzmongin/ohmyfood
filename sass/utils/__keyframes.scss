@@ -16,3 +16,24 @@
     opacity: 1;
   }
 }
+
+@keyframes loader-background {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  50% {
+    transform: scale(3) rotate(180deg);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) rotate(360deg);
+  }
+}
