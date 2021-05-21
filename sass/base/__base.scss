@@ -3,6 +3,7 @@ body {
   padding: 0;
   border: 0;
   font-family: Roboto;
+  max-width: 1900px;
 }
 .container {
   max-width: 2500px;
@@ -17,12 +18,12 @@ a {
 }
 .loader {
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
   height: 40px;
   width: 40px;
   background: white;
-  top: 50vh;
-  margin: auto;
+  top: calc(50vh - 20px);
+  left: calc(50vw - 20px);
   animation: loader 1000ms;
   animation-iteration-count: 3;
   animation-fill-mode: both;
