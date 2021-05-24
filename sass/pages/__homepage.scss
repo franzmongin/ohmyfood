@@ -1,5 +1,6 @@
 .container {
   flex-direction: column;
+
   .localisation {
     background: $fifth-color;
     height: 50px;
@@ -63,7 +64,7 @@
       &--active {
         background: #f5edff;
       }
-      &__icon {
+      &-icon {
         color: #7e7e7e;
         font-size: 22px;
         padding-left: calc(8% + 12.5px);
@@ -71,11 +72,11 @@
           color: $primary-color;
         }
       }
-      &__text {
+      &-text {
         padding-left: 8%;
       }
       @for $i from 1 through 3 {
-        &__#{$i} {
+        &-#{$i} {
           &::before {
             display: flex;
             align-items: center;
@@ -148,7 +149,7 @@
         top: 13px;
         right: 13px;
       }
-      &__image {
+      &-image {
         height: 174px;
         width: 100%;
         img {
@@ -158,22 +159,22 @@
           width: 100%;
         }
       }
-      &__footer {
+      &-footer {
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-left: 14px;
         padding-right: 23px;
-        &__legend {
+        &-legend {
           display: flex;
           flex-direction: column;
-          &__name {
+          &-name {
             margin-bottom: 7px;
             margin-top: 0;
           }
         }
-        &__icon {
+        &-icon {
           height: 20px;
           &:hover {
             .liked-icon {

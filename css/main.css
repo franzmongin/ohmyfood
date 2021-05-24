@@ -201,18 +201,18 @@ a {
 .container .working__step--active {
   background: #f5edff;
 }
-.container .working__step__icon {
+.container .working__step-icon {
   color: #7e7e7e;
   font-size: 22px;
   padding-left: calc(8% + 12.5px);
 }
-.container .working__step__icon--active {
+.container .working__step-icon--active {
   color: #9356dc;
 }
-.container .working__step__text {
+.container .working__step-text {
   padding-left: 8%;
 }
-.container .working__step__1::before {
+.container .working__step-1::before {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +227,7 @@ a {
   position: absolute;
   left: -12.5px;
 }
-.container .working__step__2::before {
+.container .working__step-2::before {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,7 +242,7 @@ a {
   position: absolute;
   left: -12.5px;
 }
-.container .working__step__3::before {
+.container .working__step-3::before {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,17 +317,17 @@ a {
   top: 13px;
   right: 13px;
 }
-.container .restaurants__element__image {
+.container .restaurants__element-image {
   height: 174px;
   width: 100%;
 }
-.container .restaurants__element__image img {
+.container .restaurants__element-image img {
   object-fit: cover;
   object-position: center;
   height: 100%;
   width: 100%;
 }
-.container .restaurants__element__footer {
+.container .restaurants__element-footer {
   height: 80px;
   display: flex;
   align-items: center;
@@ -335,34 +335,34 @@ a {
   padding-left: 14px;
   padding-right: 23px;
 }
-.container .restaurants__element__footer__legend {
+.container .restaurants__element-footer-legend {
   display: flex;
   flex-direction: column;
 }
-.container .restaurants__element__footer__legend__name {
+.container .restaurants__element-footer-legend-name {
   margin-bottom: 7px;
   margin-top: 0;
 }
-.container .restaurants__element__footer__icon {
+.container .restaurants__element-footer-icon {
   height: 20px;
 }
-.container .restaurants__element__footer__icon:hover .liked-icon {
+.container .restaurants__element-footer-icon:hover .liked-icon {
   opacity: 1;
 }
-.container .restaurants__element__footer__icon:hover .unliked-icon {
+.container .restaurants__element-footer-icon:hover .unliked-icon {
   opacity: 0;
 }
-.container .restaurants__element__footer__icon i {
+.container .restaurants__element-footer-icon i {
   font-size: 20px;
 }
-.container .restaurants__element__footer__icon i.liked-icon {
+.container .restaurants__element-footer-icon i.liked-icon {
   opacity: 0;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: opacity 300ms ease-in-out;
 }
-.container .restaurants__element__footer__icon i.unliked-icon {
+.container .restaurants__element-footer-icon i.unliked-icon {
   position: absolute;
   transition: opacity 300ms ease-in-out;
 }
