@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 @keyframes buttonrotate {
   from {
     transform: rotate(0);
@@ -34,19 +35,6 @@
     opacity: 0;
     transform: scale(1) rotate(360deg);
   }
-}
-@font-face {
-  font-family: "Shrikhand";
-  src: url(../../fonts/Shrikhand/Shrikhand-Regular.ttf);
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../../fonts/Roboto/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../../fonts/Roboto/Roboto-Bold.ttf);
-  font-weight: bold;
 }
 body {
   margin: 0;
@@ -289,6 +277,9 @@ a {
   .container .restaurants h2 {
     width: 100%;
   }
+}
+.container .restaurants a {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .container .restaurants a {

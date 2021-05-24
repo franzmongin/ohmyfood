@@ -117,6 +117,7 @@
       }
     }
     a {
+      width: 100%;
       @media (min-width: 768px) {
         width: calc(50% - (15px / 2));
       }
@@ -149,7 +150,6 @@
       }
       &__image {
         height: 174px;
-        // width: 335px;
         width: 100%;
         img {
           object-fit: cover;
@@ -171,8 +171,6 @@
           &__name {
             margin-bottom: 7px;
             margin-top: 0;
-          }
-          &__localisation {
           }
         }
         &__icon {
