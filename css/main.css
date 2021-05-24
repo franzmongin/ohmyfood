@@ -417,7 +417,7 @@ a {
   flex-direction: column;
   margin-bottom: 8px;
 }
-.container .menu .menu__section__heading {
+.container .menu .menu__section-heading {
   position: relative;
   text-transform: uppercase;
   font-size: 14px;
@@ -428,14 +428,14 @@ a {
   margin-bottom: 12px;
   margin-top: 12px;
 }
-.container .menu .menu__section__heading__border {
+.container .menu .menu__section-heading-border {
   position: absolute;
   bottom: 0;
   height: 2px;
   width: 35px;
   background: #99e2d0;
 }
-.container .menu .menu__section__element {
+.container .menu .menu__section-element {
   box-sizing: border-box;
   height: 60px;
   background: white;
@@ -445,75 +445,75 @@ a {
   box-shadow: 0px 1px 5px lightgrey;
   overflow: hidden;
 }
-.container .menu .menu__section__element--1 {
+.container .menu .menu__section-element-1 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 100ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--2 {
+.container .menu .menu__section-element-2 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 200ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--3 {
+.container .menu .menu__section-element-3 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 300ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--4 {
+.container .menu .menu__section-element-4 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 400ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--5 {
+.container .menu .menu__section-element-5 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 500ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--6 {
+.container .menu .menu__section-element-6 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 600ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--7 {
+.container .menu .menu__section-element-7 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 700ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--8 {
+.container .menu .menu__section-element-8 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 800ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element--9 {
+.container .menu .menu__section-element-9 {
   animation-name: menu-element-appears;
   animation-duration: 500ms;
   animation-delay: 900ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.container .menu .menu__section__element__content {
+.container .menu .menu__section-element-content {
   justify-content: space-between;
   width: 100%;
   min-width: 0;
 }
-.container .menu .menu__section__element__content__name {
+.container .menu .menu__section-element-content-name {
   box-sizing: border-box;
   height: 60px;
   flex-direction: column;
@@ -521,13 +521,13 @@ a {
   justify-content: flex-end;
   padding-bottom: 10px;
 }
-.container .menu .menu__section__element__content__name h4 {
+.container .menu .menu__section-element-content-name h4 {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.container .menu .menu__section__element__content__name h3 {
+.container .menu .menu__section-element-content-name h3 {
   font-size: 16.8px;
   margin-bottom: 4px;
   margin-top: 0;
@@ -535,11 +535,11 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.container .menu .menu__section__element__content__name h4 {
+.container .menu .menu__section-element-content-name h4 {
   font-weight: 300;
   font-size: 14px;
 }
-.container .menu .menu__section__element__content__price {
+.container .menu .menu__section-element-content-price {
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 10px;
@@ -550,7 +550,7 @@ a {
   align-items: flex-end;
   justify-content: center;
 }
-.container .menu .menu__section__element__button {
+.container .menu .menu__section-element-button {
   background: #99e2d0;
   width: 0;
   min-width: 0;
@@ -560,14 +560,14 @@ a {
   justify-content: center;
   overflow: hidden;
 }
-.container .menu .menu__section__element__button i {
+.container .menu .menu__section-element-button i {
   color: white;
 }
-.container .menu .menu__section__element:hover .menu__section__element__button {
+.container .menu .menu__section-element:hover .menu__section-element-button {
   width: 50px;
   min-width: 50px;
 }
-.container .menu .menu__section__element:hover .menu__section__element__button i {
+.container .menu .menu__section-element:hover .menu__section-element-button i {
   animation: buttonrotate 300ms;
 }
 .container .order-button {
