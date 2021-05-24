@@ -189,9 +189,7 @@
               opacity: 0;
               background: linear-gradient($primary-color, $second-color);
               -webkit-text-fill-color: transparent;
-              background-clip: text;
               -webkit-background-clip: text;
-              color: transparent;
               transition: opacity 300ms ease-in-out;
             }
             &.unliked-icon {
