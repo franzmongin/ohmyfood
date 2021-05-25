@@ -1,7 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  @include reset;
   font-family: Roboto;
 }
 .container {
@@ -10,6 +8,13 @@ body {
 }
 .container--home {
   animation: loader-background 3000ms;
+}
+.flex {
+  display: flex;
+  &-center {
+    align-items: center;
+    justify-content: center;
+  }
 }
 a {
   text-decoration: none;

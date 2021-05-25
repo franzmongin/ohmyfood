@@ -9,7 +9,7 @@
     box-shadow: 0px 2px 6px grey;
     &:hover {
       filter: brightness(1.25);
-      box-shadow: 0px 6px 6px grey;
+      box-shadow: 0px hover-shadow(2) 6px grey;
     }
   }
 }

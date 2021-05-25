@@ -52,6 +52,14 @@ body {
   animation: loader-background 3000ms;
 }
 
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -576,14 +584,6 @@ a {
   margin: auto;
   margin-bottom: 60px;
   margin-top: -10px;
-}
-
-.flex {
-  display: flex;
-}
-.flex-center {
-  align-items: center;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

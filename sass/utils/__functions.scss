@@ -1,0 +1,4 @@
+@function hover-shadow($shadow) {
+  $result: $shadow * 1px + 4px;
+  @return $result;
+}

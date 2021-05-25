@@ -1,4 +1,6 @@
 @import "./utils/__variables.scss";
+@import "./utils/__mixins.scss";
+@import "./utils/__functions.scss";
 @import "./utils/_keyframes";
 @import "./vendors/_fonts";
 @import "./base/_base";
@@ -7,11 +9,3 @@
 @import "./layout/_footer";
 @import "./pages/__homepage.scss";
 @import "./pages/__restaurant.scss";
-
-.flex {
-  display: flex;
-  &-center {
-    align-items: center;
-    justify-content: center;
-  }
-}
