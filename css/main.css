@@ -105,6 +105,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
 }
 .header__logo {
   width: 165px;
@@ -191,6 +192,7 @@ a {
   flex-direction: column;
   height: 440px;
   padding: 0 15px 0 15px;
+  background: white;
 }
 .container .working h2 {
   margin-top: 50px;
@@ -376,7 +378,7 @@ a {
 }
 
 .container {
-  background: #eaeaea;
+  background: #f6f6f6;
 }
 .container .header-restaurant {
   position: relative;
@@ -400,7 +402,7 @@ a {
   border-radius: 24px 24px 0 0;
   flex-direction: column;
   padding: 0 15px 0 15px;
-  background: #eaeaea;
+  background: #f6f6f6;
   overflow: hidden;
   position: relative;
   bottom: 30px;
