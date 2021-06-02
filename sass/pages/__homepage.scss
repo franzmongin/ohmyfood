@@ -62,16 +62,16 @@
       font-weight: bold;
       align-items: center;
       box-shadow: $classic-box-shadow;
-      &--active {
+      &:hover {
         background: #f5edff;
+        .working__step-icon {
+          color: $primary-color;
+        }
       }
       &-icon {
         color: #7e7e7e;
         font-size: 22px;
         padding-left: calc(8% + 12.5px);
-        &--active {
-          color: $primary-color;
-        }
       }
       &-text {
         padding-left: 8%;
